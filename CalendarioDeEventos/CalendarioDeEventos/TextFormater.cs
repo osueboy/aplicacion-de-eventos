@@ -2,7 +2,7 @@
 
 namespace CalendarioDeEventos
 {
-    public class TextFormater
+    public class TextFormater : ITextFormater
     {
         protected ITimeChecker _timeChecker;
 
@@ -19,7 +19,6 @@ namespace CalendarioDeEventos
             string[] split = text.Split(",");
             evento = split[0];
             tiempo = split[1].Trim();
-
             DateTime fecha = DateParser.ParseDate(tiempo);
             TimeCheckerResponse timeCheckerResponse = _timeChecker.CheckTime(fecha);
             string response = "";

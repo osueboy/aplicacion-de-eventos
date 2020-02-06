@@ -9,10 +9,11 @@ namespace CalendarioDeEventos
         static void Main(string[] args)
         {
             EventFileReader eventFileReader;
-            List<string> eventLines;
+            List<string> eventLines = new List<string>();
             IClockReader clockReader = new Clock();
             ITimeChecker timeChecker = new TimeChecker(clockReader);
-            TextFormater textFormater = new TextFormater(timeChecker);
+            ITextFormater textFormater = new TextFormater(timeChecker);
+            IPrinter printer = new ConsolePrinter(textFormater);
 
             try
             {   // Open the text file using a stream reader.
@@ -21,11 +22,6 @@ namespace CalendarioDeEventos
                     eventFileReader = new EventFileReader(sr);
                     eventLines = eventFileReader.ReadLines();
                 }
-
-                foreach(string line in eventLines)
-                {
-                    Console.WriteLine(textFormater.FormatText(line));
-                }
             }
             catch (IOException e)
             {
@@ -33,8 +29,10 @@ namespace CalendarioDeEventos
                 Console.WriteLine(e.Message);
             }
 
-
-
+            foreach (string line in eventLines)
+            {
+                printer.PrintText(line);
+            }
 
         }
     }
