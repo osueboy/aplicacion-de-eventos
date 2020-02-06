@@ -13,6 +13,8 @@ namespace CalendarioDeEventos
             var serviceProvider = new ServiceCollection()
                 .AddScoped(typeof(IClockReader), typeof(Clock))
                 .AddScoped(typeof(ITimeChecker), typeof(TimeChecker))
+                .AddScoped(typeof(IRangeManager), typeof(RangeManager))
+                .AddScoped(typeof(ITimeValueManager), typeof(DefaultTimeValueManager))
                 .AddScoped(typeof(ITextFormater), typeof(TextFormater))
                 .AddScoped(typeof(IPrinter), typeof(ConsolePrinter))
                 .AddScoped(typeof(ITextFileReader), typeof(EventFileReader))
