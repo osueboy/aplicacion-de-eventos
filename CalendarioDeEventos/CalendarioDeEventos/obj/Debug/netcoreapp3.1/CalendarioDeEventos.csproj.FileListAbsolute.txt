@@ -1,0 +1,11 @@
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\obj\Debug\netcoreapp3.1\CalendarioDeEventos.csprojAssemblyReference.cache
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\obj\Debug\netcoreapp3.1\CalendarioDeEventos.AssemblyInfoInputs.cache
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\obj\Debug\netcoreapp3.1\CalendarioDeEventos.AssemblyInfo.cs
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\CalendarioDeEventos.exe
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\CalendarioDeEventos.deps.json
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\CalendarioDeEventos.runtimeconfig.json
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\CalendarioDeEventos.runtimeconfig.dev.json
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\CalendarioDeEventos.dll
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\CalendarioDeEventos.pdb
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\obj\Debug\netcoreapp3.1\CalendarioDeEventos.dll
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\obj\Debug\netcoreapp3.1\CalendarioDeEventos.pdb
