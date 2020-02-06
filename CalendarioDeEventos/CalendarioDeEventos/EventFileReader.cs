@@ -1,23 +1,34 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace CalendarioDeEventos
 {
-    public class EventFileReader
+    public class EventFileReader : ITextFileReader
     {
-        protected readonly StreamReader _streamReader;
-        public EventFileReader(StreamReader streamReader)
+
+        public EventFileReader()
         {
-            _streamReader = streamReader;
         }
 
-        public List<string> ReadLines()
+        public List<string> ReadLines(string path)
         {
             List<string> lines = new List<string>();
-            string line;
-            while ((line = _streamReader.ReadLine()) != null)
+            try
+            {   // Open the text file using a stream reader.
+                using (StreamReader sr = new StreamReader(path))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        lines.Add(line);
+                    }
+                }
+            }
+            catch (IOException e)
             {
-                lines.Add(line);
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
             }
             return lines;
         }

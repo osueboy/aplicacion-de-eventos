@@ -9,3 +9,6 @@ C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\D
 C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\CalendarioDeEventos.pdb
 C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\obj\Debug\netcoreapp3.1\CalendarioDeEventos.dll
 C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\obj\Debug\netcoreapp3.1\CalendarioDeEventos.pdb
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\obj\Debug\netcoreapp3.1\CalendarioDeEventos.csproj.CopyComplete
+C:\Users\josue.garcia\source\repos\CalendarioDeEventos\CalendarioDeEventos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
