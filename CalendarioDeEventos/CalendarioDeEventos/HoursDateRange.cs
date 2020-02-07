@@ -8,7 +8,7 @@ namespace CalendarioDeEventos
 
         public bool Validate(TimeSpan timeSpan)
         {
-            if (timeSpan.TotalMinutes > 60)
+            if (timeSpan.TotalMinutes >= 60)
             {
                 return true;
             }

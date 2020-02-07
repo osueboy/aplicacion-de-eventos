@@ -1,7 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.IO;
 
 namespace CalendarioDeEventos
 {
@@ -9,7 +6,6 @@ namespace CalendarioDeEventos
     {
         static void Main(string[] args)
         {
-            //setup our DI
             var serviceProvider = new ServiceCollection()
                 .AddScoped(typeof(IClockReader), typeof(Clock))
                 .AddScoped(typeof(ITimeChecker), typeof(TimeChecker))

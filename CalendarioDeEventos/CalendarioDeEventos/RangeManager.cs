@@ -17,15 +17,16 @@ namespace CalendarioDeEventos
         }
         public string GetRange(TimeSpan timeSpan)
         {
-
-            foreach(IDateRange dateRange in _dateRanges)
+            string response = DateRanges.Minutes;
+            foreach (IDateRange dateRange in _dateRanges)
             {
                 if (dateRange.Validate(timeSpan))
                 {
-                    return dateRange.Range;
+                    response = dateRange.Range;
+                    break;
                 }
             }
-            return DateRanges.Minutes;
+            return response;
         }
     }
 }

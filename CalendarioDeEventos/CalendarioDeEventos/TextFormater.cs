@@ -4,6 +4,10 @@ namespace CalendarioDeEventos
 {
     public class TextFormater : ITextFormater
     {
+
+        public const string PastTemplate = "{0} ocurrió hace {1} {2}";
+        public const string FutureTemplate = "{0} ocurrirá dentro de {1} {2}";
+
         protected ITimeChecker _timeChecker;
         protected ITimeValueManager _timeValueManager;
 
@@ -15,7 +19,6 @@ namespace CalendarioDeEventos
 
         public string FormatText(string text)
         {
-            string response = "";
             string evento;
             string tiempo;
 
@@ -26,16 +29,8 @@ namespace CalendarioDeEventos
             TimeCheckerResponse timeCheckerResponse = _timeChecker.CheckTime(fecha);
             TimeSpan timeSpan = timeCheckerResponse.TimePast;      
             TimeValueResponse timeValueResponse = _timeValueManager.GetTimeValue(timeSpan);
-            string template = "";
-            if (timeCheckerResponse.Past)
-            {         
-                template = "{0} ocurrió hace {1} {2}";
-            }
-            else
-            {
-                template = "{0} ocurrirá dentro de {1} {2}";
-            }
-            response = string.Format(template, evento, timeValueResponse.Value, timeValueResponse.DateRange);
+            string template = timeCheckerResponse.Past ? PastTemplate : FutureTemplate;
+            string response = string.Format(template, evento, timeValueResponse.Value, timeValueResponse.DateRange);
             return response;
         }
     }

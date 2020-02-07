@@ -15,9 +15,12 @@ namespace CalendarioDeEventos
         public void GetAllEvents(string path)
         {
             List<string> lines = _textFileReader.ReadLines(path);
-            foreach (string line in lines)
+            if (lines != null)
             {
-                _printer.PrintText(line);
+                foreach (string line in lines)
+                {
+                    _printer.PrintText(line);
+                }
             }
         }
     }
